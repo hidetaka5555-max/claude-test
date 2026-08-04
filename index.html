@@ -156,20 +156,22 @@
   </header>
 
   <!-- ===== メインビジュアル（画面いっぱい） ===== -->
-  <section class="relative h-screen w-full">
-    <img
-      src="images/storefront.jpg"
-      alt="Golden Rabbit Beer 四條畷醸造所 店舗外観"
-      class="absolute inset-0 w-full h-full object-cover object-top">
+  <section class="relative h-screen w-full bg-ink">
+    <!-- スマホは看板が切れないよう全体表示、タブレット以上は全画面トリミング -->
+    <div class="absolute inset-0 pt-16 sm:pt-0">
+      <img
+        src="images/storefront.jpg"
+        alt="Golden Rabbit Beer 四條畷醸造所 店舗外観"
+        class="w-full h-full object-contain object-top sm:object-cover">
+    </div>
     <!-- 暗めのオーバーレイ -->
-    <div class="absolute inset-0 bg-gradient-to-b from-black/45 via-black/20 to-black/50"></div>
+    <div class="absolute inset-0 bg-gradient-to-b from-black/35 via-black/15 to-black/70"></div>
 
-    <div class="relative z-10 flex flex-col items-center justify-center h-full text-white text-center px-4">
-      <p class="text-xs sm:text-sm md:text-base tracking-widest sm:tracking-widest2 mb-5">SHIJONAWATE BREWERY, OSAKA</p>
-      <h1 class="font-serif text-4xl sm:text-5xl md:text-7xl lg:text-8xl leading-tight tracking-wide sm:tracking-widest mb-3">
-        GOLDEN RABBIT BEER
+    <div class="relative z-10 flex flex-col items-center justify-end h-full text-white text-center px-4 pb-32 md:pb-36">
+      <h1 class="font-serif text-3xl sm:text-4xl md:text-5xl leading-tight tracking-widest mb-4 [text-shadow:0_2px_14px_rgba(0,0,0,.55)]">
+        <span class="sr-only">GOLDEN RABBIT BEER </span>四條畷醸造所
       </h1>
-      <p class="text-xs sm:text-sm tracking-widest2 text-brass mb-10">四條畷醸造所</p>
+      <p class="text-[10px] sm:text-xs md:text-sm tracking-widest2 text-brass mb-9 [text-shadow:0_2px_10px_rgba(0,0,0,.7)]">SHIJONAWATE BREWERY, OSAKA</p>
       <a href="#" class="inline-block px-8 py-3.5 text-sm tracking-widest border border-white hover:bg-white hover:text-ink transition-colors">
         VIEW PRODUCTS
       </a>
