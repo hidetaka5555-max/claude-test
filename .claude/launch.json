@@ -1,0 +1,14 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "receipt-prototype",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": [
+        "/Users/tanakahide/receipt-prototype/server.py",
+        "8766"
+      ],
+      "port": 8766
+    }
+  ]
+}

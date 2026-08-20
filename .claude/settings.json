@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(scripts/deliver-to-desktop.sh *)",
+      "Bash(python3 ~/.claude/skills/line-memory/scripts/search.py *)",
+      "Bash(pdftotext *)",
+      "Bash(plutil -lint *)",
+      "mcp__Claude_Browser__get_page_text"
+    ]
+  }
+}
