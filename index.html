@@ -32,8 +32,7 @@
   </script>
   <style>
     /* 写真をアンティーク調の温かいトーンに統一（ロゴマークは除外） */
-    img[src^="images/"]:not([src*="brand-mark"]),
-    img[src^="https://images.unsplash.com"] {
+    img[src^="images/"]:not([src*="brand-mark"]) {
       filter: sepia(.14) saturate(1.04) contrast(.98);
     }
 
@@ -106,7 +105,6 @@
           <a href="#concept" class="hover:text-brass transition-colors">CONCEPT</a>
           <a href="#taproom" class="hover:text-brass transition-colors">TAPROOM</a>
           <a href="#access" class="hover:text-brass transition-colors">ACCESS</a>
-          <a href="#products" class="hover:text-brass transition-colors">PRODUCTS</a>
           <a href="#story" class="hover:text-brass transition-colors">STORY</a>
           <a href="#news" class="hover:text-brass transition-colors">NEWS</a>
         </nav>
@@ -147,7 +145,6 @@
         <a href="#concept" class="hover:text-brass transition-colors">CONCEPT</a>
         <a href="#taproom" class="hover:text-brass transition-colors">TAPROOM</a>
         <a href="#access" class="hover:text-brass transition-colors">ACCESS</a>
-        <a href="#products" class="hover:text-brass transition-colors">PRODUCTS</a>
         <a href="#story" class="hover:text-brass transition-colors">STORY</a>
         <a href="#news" class="hover:text-brass transition-colors">NEWS</a>
       </nav>
@@ -186,9 +183,6 @@
         <span class="sr-only">GOLDEN RABBIT BEER </span>四條畷醸造所
       </h1>
       <p class="text-[10px] sm:text-xs md:text-sm tracking-widest2 text-brass mb-9 [text-shadow:0_2px_10px_rgba(0,0,0,.7)]">SHIJONAWATE BREWERY, OSAKA</p>
-      <a href="#products" class="inline-block px-8 py-3.5 text-sm tracking-widest border border-white hover:bg-white hover:text-ink transition-colors">
-        VIEW PRODUCTS
-      </a>
     </div>
 
     <!-- スクロールインジケーター -->
@@ -304,90 +298,6 @@
   </section>
 
   <!-- ===== プロダクトギャラリー ===== -->
-  <section id="products" class="py-20 md:py-32 bg-parchment">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center mb-12 md:mb-16">
-        <p class="text-xs tracking-widest2 text-brass mb-3">PRODUCTS</p>
-        <h2 class="font-serif text-2xl md:text-4xl tracking-widest">ビール一覧</h2>
-      </div>
-
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-
-        <!-- 商品カード -->
-        <div class="group block">
-          <div class="overflow-hidden">
-            <img
-              src="https://images.unsplash.com/photo-1535958636474-b021ee887b13?auto=format&fit=crop&w=900&q=80"
-              alt="Golden Rabbit ペールエール"
-              class="w-full aspect-square object-cover transition-transform duration-500 group-hover:scale-105">
-          </div>
-          <div class="pt-4">
-            <h3 class="text-sm md:text-base tracking-wider">ペールエール</h3>
-          </div>
-        </div>
-
-        <div class="group block">
-          <div class="overflow-hidden">
-            <img
-              src="https://images.unsplash.com/photo-1584225064785-c62a8b43d148?auto=format&fit=crop&w=900&q=80"
-              alt="Golden Rabbit IPA"
-              class="w-full aspect-square object-cover transition-transform duration-500 group-hover:scale-105">
-          </div>
-          <div class="pt-4">
-            <h3 class="text-sm md:text-base tracking-wider">IPA</h3>
-          </div>
-        </div>
-
-        <div class="group block">
-          <div class="overflow-hidden">
-            <img
-              src="images/golden-lager-hops.jpg"
-              alt="Golden Rabbit ゴールデンラガー"
-              class="w-full aspect-square object-cover transition-transform duration-500 group-hover:scale-105">
-          </div>
-          <div class="pt-4">
-            <h3 class="text-sm md:text-base tracking-wider">ゴールデンラガー</h3>
-          </div>
-        </div>
-
-        <div class="group block">
-          <div class="overflow-hidden">
-            <img
-              src="https://images.unsplash.com/photo-1571767454920-4b998e2c9a1e?auto=format&fit=crop&w=900&q=80"
-              alt="Golden Rabbit スタウト"
-              class="w-full aspect-square object-cover transition-transform duration-500 group-hover:scale-105">
-          </div>
-          <div class="pt-4">
-            <h3 class="text-sm md:text-base tracking-wider">スタウト</h3>
-          </div>
-        </div>
-
-        <div class="group block">
-          <div class="overflow-hidden">
-            <img
-              src="https://images.unsplash.com/photo-1600788907416-456578634209?auto=format&fit=crop&w=900&q=80"
-              alt="Golden Rabbit ホワイトエール"
-              class="w-full aspect-square object-cover transition-transform duration-500 group-hover:scale-105">
-          </div>
-          <div class="pt-4">
-            <h3 class="text-sm md:text-base tracking-wider">ホワイトエール</h3>
-          </div>
-        </div>
-
-        <div class="group block">
-          <div class="overflow-hidden">
-            <img
-              src="https://images.unsplash.com/photo-1567696911980-2eed69a46042?auto=format&fit=crop&w=900&q=80"
-              alt="Golden Rabbit 四條畷限定セット"
-              class="w-full aspect-square object-cover transition-transform duration-500 group-hover:scale-105">
-          </div>
-          <div class="pt-4">
-            <h3 class="text-sm md:text-base tracking-wider">四條畷醸造所限定セット</h3>
-          </div>
-        </div>
-
-      </div>    </div>
-  </section>
 
   <!-- ===== ストーリー ===== -->
   <section id="story" class="py-20 md:py-32 bg-parchment">
@@ -463,7 +373,6 @@
           <ul class="space-y-3 text-sm">
             <li><a href="#concept" class="hover:text-brass transition-colors">コンセプト</a></li>
             <li><a href="#access" class="hover:text-brass transition-colors">アクセス</a></li>
-            <li><a href="#products" class="hover:text-brass transition-colors">ビール一覧</a></li>
             <li><a href="#story" class="hover:text-brass transition-colors">ストーリー</a></li>
             <li><a href="#news" class="hover:text-brass transition-colors">ニュース</a></li>
           </ul>
