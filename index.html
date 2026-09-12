@@ -71,7 +71,7 @@
     }
   </style>
 </head>
-<body class="font-sans text-ink antialiased bg-cream">
+<body class="font-sans text-ink antialiased bg-cream" id="top">
 
   <!-- ===== オープニングロゴアニメーション ===== -->
   <div id="intro" class="fixed inset-0 z-[100] bg-ink flex flex-col items-center justify-center gap-8 transition-opacity duration-700">
@@ -96,7 +96,7 @@
       <div class="flex items-center justify-between h-16 md:h-20">
 
         <!-- ロゴ -->
-        <a href="#" class="flex flex-col leading-none shrink min-w-0">
+        <a href="#top" class="flex flex-col leading-none shrink min-w-0">
           <span class="font-serif font-bold text-sm md:text-2xl tracking-wide md:tracking-widest2 whitespace-nowrap truncate">GOLDEN RABBIT BEER</span>
           <span class="text-[9px] md:text-sm tracking-widest text-brass mt-1">四條畷醸造所</span>
         </a>
@@ -110,17 +110,6 @@
           <a href="#story" class="hover:text-brass transition-colors">STORY</a>
           <a href="#news" class="hover:text-brass transition-colors">NEWS</a>
         </nav>
-
-        <!-- ボタン群（PC表示） -->
-        <div class="hidden md:flex items-center gap-3">
-          <a href="#" class="inline-block px-5 py-2.5 text-sm tracking-wider bg-ink text-cream hover:bg-brass transition-colors">
-            ONLINE SHOP
-          </a>
-          <a href="#" class="inline-block px-5 py-2.5 text-sm tracking-wider border border-ink text-ink hover:bg-ink hover:text-cream transition-colors">
-            ふるさと納税
-          </a>
-        </div>
-
         <!-- ハンバーガーボタン（モバイル表示） -->
         <button id="menu-toggle" type="button" class="md:hidden p-2 -mr-2 shrink-0" aria-label="メニューを開く" aria-expanded="false" aria-controls="mobile-menu">
           <svg id="icon-open" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
@@ -143,16 +132,7 @@
         <a href="#products" class="hover:text-brass transition-colors">PRODUCTS</a>
         <a href="#story" class="hover:text-brass transition-colors">STORY</a>
         <a href="#news" class="hover:text-brass transition-colors">NEWS</a>
-      </nav>
-      <div class="flex flex-col gap-3 px-4 pb-6">
-        <a href="#" class="block text-center px-5 py-3 text-sm tracking-wider bg-ink text-cream hover:bg-brass transition-colors">
-          ONLINE SHOP
-        </a>
-        <a href="#" class="block text-center px-5 py-3 text-sm tracking-wider border border-ink text-ink hover:bg-ink hover:text-cream transition-colors">
-          ふるさと納税
-        </a>
-      </div>
-    </div>
+      </nav>    </div>
   </header>
 
   <!-- ===== メインビジュアル（画面いっぱい） ===== -->
@@ -172,7 +152,7 @@
         <span class="sr-only">GOLDEN RABBIT BEER </span>四條畷醸造所
       </h1>
       <p class="text-[10px] sm:text-xs md:text-sm tracking-widest2 text-brass mb-9 [text-shadow:0_2px_10px_rgba(0,0,0,.7)]">SHIJONAWATE BREWERY, OSAKA</p>
-      <a href="#" class="inline-block px-8 py-3.5 text-sm tracking-widest border border-white hover:bg-white hover:text-ink transition-colors">
+      <a href="#products" class="inline-block px-8 py-3.5 text-sm tracking-widest border border-white hover:bg-white hover:text-ink transition-colors">
         VIEW PRODUCTS
       </a>
     </div>
@@ -300,7 +280,7 @@
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
 
         <!-- 商品カード -->
-        <a href="#" class="group block">
+        <div class="group block">
           <div class="overflow-hidden">
             <img
               src="https://images.unsplash.com/photo-1535958636474-b021ee887b13?auto=format&fit=crop&w=900&q=80"
@@ -311,9 +291,9 @@
             <h3 class="text-sm md:text-base tracking-wider">ペールエール</h3>
             <p class="text-xs text-ink-soft mt-1">¥ 880（税込）/ 350ml</p>
           </div>
-        </a>
+        </div>
 
-        <a href="#" class="group block">
+        <div class="group block">
           <div class="overflow-hidden">
             <img
               src="https://images.unsplash.com/photo-1584225064785-c62a8b43d148?auto=format&fit=crop&w=900&q=80"
@@ -324,9 +304,9 @@
             <h3 class="text-sm md:text-base tracking-wider">IPA</h3>
             <p class="text-xs text-ink-soft mt-1">¥ 920（税込）/ 350ml</p>
           </div>
-        </a>
+        </div>
 
-        <a href="#" class="group block">
+        <div class="group block">
           <div class="overflow-hidden">
             <img
               src="images/golden-lager-hops.jpg"
@@ -337,9 +317,9 @@
             <h3 class="text-sm md:text-base tracking-wider">ゴールデンラガー</h3>
             <p class="text-xs text-ink-soft mt-1">¥ 850（税込）/ 350ml</p>
           </div>
-        </a>
+        </div>
 
-        <a href="#" class="group block">
+        <div class="group block">
           <div class="overflow-hidden">
             <img
               src="https://images.unsplash.com/photo-1571767454920-4b998e2c9a1e?auto=format&fit=crop&w=900&q=80"
@@ -350,9 +330,9 @@
             <h3 class="text-sm md:text-base tracking-wider">スタウト</h3>
             <p class="text-xs text-ink-soft mt-1">¥ 950（税込）/ 350ml</p>
           </div>
-        </a>
+        </div>
 
-        <a href="#" class="group block">
+        <div class="group block">
           <div class="overflow-hidden">
             <img
               src="https://images.unsplash.com/photo-1600788907416-456578634209?auto=format&fit=crop&w=900&q=80"
@@ -363,9 +343,9 @@
             <h3 class="text-sm md:text-base tracking-wider">ホワイトエール</h3>
             <p class="text-xs text-ink-soft mt-1">¥ 880（税込）/ 350ml</p>
           </div>
-        </a>
+        </div>
 
-        <a href="#" class="group block">
+        <div class="group block">
           <div class="overflow-hidden">
             <img
               src="https://images.unsplash.com/photo-1567696911980-2eed69a46042?auto=format&fit=crop&w=900&q=80"
@@ -376,16 +356,9 @@
             <h3 class="text-sm md:text-base tracking-wider">四條畷醸造所限定セット</h3>
             <p class="text-xs text-ink-soft mt-1">¥ 3,600（税込）/ 4本</p>
           </div>
-        </a>
+        </div>
 
-      </div>
-
-      <div class="text-center mt-12 md:mt-16">
-        <a href="#" class="inline-block px-10 py-3.5 text-sm tracking-widest border border-ink hover:bg-ink hover:text-cream transition-colors">
-          VIEW ALL
-        </a>
-      </div>
-    </div>
+      </div>    </div>
   </section>
 
   <!-- ===== ストーリー ===== -->
@@ -427,34 +400,27 @@
 
       <ul class="divide-y divide-ink/10 border-y border-ink/10">
         <li>
-          <a href="#" class="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-8 py-6 px-2 hover:bg-parchment/60 transition-colors">
+          <div class="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-8 py-6 px-2">
             <time class="text-xs text-ink-soft shrink-0 tracking-wider">2026年〇月〇日</time>
             <span class="text-[10px] tracking-widest border border-brass/60 text-brass px-2 py-0.5 shrink-0 w-fit">OPEN</span>
             <p class="text-sm md:text-base">グランドオープン！</p>
-          </a>
+          </div>
         </li>
         <li>
-          <a href="#" class="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-8 py-6 px-2 hover:bg-parchment/60 transition-colors">
+          <div class="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-8 py-6 px-2">
             <time datetime="2026-06-15" class="text-xs text-ink-soft shrink-0 tracking-wider">2026.06.15</time>
             <span class="text-[10px] tracking-widest border border-brass/60 text-brass px-2 py-0.5 shrink-0 w-fit">EVENT</span>
             <p class="text-sm md:text-base">四條畷醸造所にてプレオープン記念テイスティングイベントを開催しました。</p>
-          </a>
+          </div>
         </li>
         <li>
-          <a href="#" class="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-8 py-6 px-2 hover:bg-parchment/60 transition-colors">
+          <div class="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-8 py-6 px-2">
             <time datetime="2026-05-30" class="text-xs text-ink-soft shrink-0 tracking-wider">2026.05.30</time>
             <span class="text-[10px] tracking-widest border border-brass/60 text-brass px-2 py-0.5 shrink-0 w-fit">INFO</span>
             <p class="text-sm md:text-base">ふるさと納税の返礼品ラインナップを更新しました。</p>
-          </a>
+          </div>
         </li>
-      </ul>
-
-      <div class="text-center mt-12">
-        <a href="#" class="inline-block px-10 py-3.5 text-sm tracking-widest border border-ink hover:bg-ink hover:text-cream transition-colors">
-          VIEW ALL
-        </a>
-      </div>
-    </div>
+      </ul>    </div>
   </section>
 
   <!-- ===== フッター ===== -->
@@ -475,23 +441,7 @@
                 <circle cx="12" cy="12" r="4" />
                 <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
               </svg>
-            </a>
-            <a href="#" aria-label="X（旧Twitter）" class="text-cream/60 hover:text-brass transition-colors">
-              <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M4 4l16 16M20 4L4 20" />
-              </svg>
-            </a>
-            <a href="#" aria-label="Facebook" class="text-cream/60 hover:text-brass transition-colors">
-              <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M14 8.5h2V5.5h-2c-1.657 0-3 1.343-3 3v2H9v3h2V19h3v-6.5h2.2l.8-3H14v-1c0-.276.224-1 1-1z" />
-              </svg>
-            </a>
-            <a href="#" aria-label="LINE" class="text-cream/60 hover:text-brass transition-colors">
-              <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M4 12c0-4.418 3.582-8 8-8s8 3.582 8 8c0 4.418-4 8-8.5 8-.62 0-1.223-.047-1.8-.137L6 21l.7-3.2C4.99 16.53 4 14.4 4 12z" />
-              </svg>
-            </a>
-          </div>
+            </a>          </div>
         </div>
 
         <div>
@@ -506,12 +456,10 @@
         </div>
 
         <div>
-          <p class="text-xs tracking-widest2 text-brass mb-4">SHOP</p>
+          <p class="text-xs tracking-widest2 text-brass mb-4">INFORMATION</p>
           <ul class="space-y-3 text-sm">
-            <li><a href="#" class="hover:text-brass transition-colors">ONLINE SHOP</a></li>
-            <li><a href="#" class="hover:text-brass transition-colors">ふるさと納税</a></li>
-            <li><a href="#" class="hover:text-brass transition-colors">お問い合わせ</a></li>
-            <li><a href="company/index.html" class="hover:text-brass transition-colors">運営会社（株式会社オヤツムギ）</a></li>
+            <li class="text-cream/60">運営会社：株式会社オヤツムギ</li>
+            <li class="text-cream/60">卸・取材のお問い合わせは<br class="sm:hidden">Instagramのメッセージより承ります</li>
           </ul>
         </div>
 
